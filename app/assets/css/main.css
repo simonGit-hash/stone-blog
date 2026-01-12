@@ -1,0 +1,118 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Public Sans', sans-serif;
+  --font-serif: 'Instrument Serif', serif;
+}
+
+@theme {
+  --spacing: 0.25rem;
+  --spacing-custom: 123px;
+}
+
+@utility with-custom-spacing-* {
+  size: --value(--spacing);
+}
+
+@utility with-integer-spacing-* {
+  size: --spacing(--value(integer));
+}
+
+@utility with-number-spacing-* {
+  size: --spacing(--value(number));
+}
+
+:root {
+  --ui-container: var(--container-4xl);
+
+  ::selection {
+    color: #282a30;
+    background-color: #c8c8c8;
+  }
+}
+
+.dark {
+  ::selection {
+    color: #ffffff;
+    background-color: #474747;
+  }
+}
+
+/* 古诗词代码片段样式 - 通过内容特征识别 */
+pre.language-poetry{
+  &:has(code) {
+    /* 基础样式 */
+    font-family: "Noto Serif SC", "SimSun", serif;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin: 2rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+          background-image: url('/common/poet-light-bg.jpg');
+      background-size: cover;
+    /* border-left: 4px solid #d4a017; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: visible;
+
+    /* 代码样式 */
+    code {
+      font-family: inherit;
+      background: transparent;
+      padding: 0;
+      font-size: 1.5rem;
+      line-height: 2.5;
+      color: #34495e;
+      white-space: pre-line;
+      display: block;
+
+      /* 行样式 */
+      span {
+        display: block;
+        margin-bottom: 0.5rem;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: translateX(5px);
+          color: #d4a017;
+        }
+      }
+    }
+
+    /* 悬停效果 */
+    &:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+      transition: box-shadow 0.3s ease;
+    }
+
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      padding: 2rem 1rem;
+
+      code {
+        font-size: 1.2rem;
+        line-height: 2.2;
+      }
+    }
+
+    /* 暗色模式适配 */
+    .dark & {
+      background-image: url('/common/poet-dark-bg.jpg');
+      background-size: cover;
+      /* background: linear-gradient(135deg, #d4d4d4 0%, #7d7d7d 100%); */
+      /* border-left-color: #e9c46a; */
+
+      code {
+        color: #000000;
+
+        span:hover {
+          color: #645e11;
+        }
+      }
+    }
+  }
+}
+
+.code-highlight {
+  @apply !text-red-500 font-semibold;
+}
