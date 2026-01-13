@@ -1,4 +1,4 @@
-# Nuxt Portfolio Template
+<!-- # Nuxt Portfolio Template
 
 [![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
 
@@ -59,4 +59,4 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 ## Renovate integration
 
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
+Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go. -->
