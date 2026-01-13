@@ -13,7 +13,7 @@ export default ({
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
   router: {
-    base: '/stone-blog/'
+    base: process.env.BASE_PATH || '/stone-blog/'
   },
   content: {
     build: {
@@ -45,7 +45,7 @@ export default ({
     plugins: [
       tailwindcss()
     ],
-    base: process.env.BASE_PATH || '/'
+    base: process.env.BASE_PATH || '/stone-blog/'
   },
   eslint: {
     config: {
