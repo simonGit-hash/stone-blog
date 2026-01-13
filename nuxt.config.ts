@@ -13,7 +13,7 @@ export default ({
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
   router: {
-    base: process.env.BASE_PATH || '/stone-blog/'
+    base: '/stone-blog/'
   },
   content: {
     build: {
@@ -36,7 +36,7 @@ export default ({
   nitro: {
     prerender: {
       routes: [
-        '/'
+        '/stone-blog/'
       ],
       crawlLinks: true
     }
@@ -45,7 +45,7 @@ export default ({
     plugins: [
       tailwindcss()
     ],
-    base: process.env.BASE_PATH || '/stone-blog/'
+    base: '/stone-blog/'
   },
   eslint: {
     config: {
