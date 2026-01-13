@@ -7,7 +7,7 @@ minRead: 8
 author:
   name: 李清照
   avatar:
-    src: /avatar2.png
+    src: /avatar.svg
     alt: 李清照
 ---
 

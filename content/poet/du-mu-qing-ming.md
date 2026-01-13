@@ -7,7 +7,7 @@ minRead: 8
 author:
   name: 杜牧
   avatar:
-    src: /avatar2.png
+    src: /avatar.svg
     alt: 杜牧
 ---
 

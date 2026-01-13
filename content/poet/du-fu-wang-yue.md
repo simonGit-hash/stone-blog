@@ -7,7 +7,7 @@ minRead: 9
 author:
   name: 杜甫
   avatar:
-    src: /avatar2.png
+    src: /avatar.svg
     alt: 杜甫
 ---
 

@@ -7,7 +7,7 @@ minRead: 9
 author:
   name: 白居易
   avatar:
-    src: /avatar2.png
+    src: /avatar.svg
     alt: 白居易
 ---
 

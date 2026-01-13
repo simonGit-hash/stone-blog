@@ -7,7 +7,7 @@ minRead: 7
 author:
   name: 王之涣
   avatar:
-    src: /avatar2.png
+    src: /avatar.svg
     alt: 王之涣
 ---
 

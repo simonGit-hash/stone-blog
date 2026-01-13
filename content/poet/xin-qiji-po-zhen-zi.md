@@ -7,7 +7,7 @@ minRead: 10
 author:
   name: 辛弃疾
   avatar:
-    src: /avatar2.png
+    src: /avatar.svg
     alt: 辛弃疾
 ---
 

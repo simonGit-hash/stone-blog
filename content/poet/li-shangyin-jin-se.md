@@ -7,7 +7,7 @@ minRead: 11
 author:
   name: 李商隐
   avatar:
-    src: /avatar2.png
+    src: /avatar.svg
     alt: 李商隐
 ---
 

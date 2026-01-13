@@ -7,7 +7,7 @@ minRead: 10
 author:
   name: 王维
   avatar:
-    src: /avatar2.png
+    src: /avatar.svg
     alt: 王维
 ---
 

@@ -7,7 +7,7 @@ minRead: 18
 author:
   name: 石头
   avatar:
-    src: /avatar2.png
+    src: /avatar.svg
     alt: 石头
 ---
 

@@ -7,7 +7,7 @@ minRead: 12
 author:
   name: 苏轼
   avatar:
-    src: /avatar2.png
+    src: /avatar.svg
     alt: 苏轼
 ---
 
