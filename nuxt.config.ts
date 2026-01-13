@@ -12,6 +12,9 @@ export default ({
   ],
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
+  router: {
+    base: '/stone-blog/'
+  },
   content: {
     build: {
       markdown: {
@@ -41,7 +44,8 @@ export default ({
   vite: {
     plugins: [
       tailwindcss()
-    ]
+    ],
+    base: process.env.BASE_PATH || '/'
   },
   eslint: {
     config: {
