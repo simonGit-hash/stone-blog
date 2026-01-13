@@ -11,6 +11,9 @@ export default ({
     'motion-v/nuxt'
   ],
   devtools: { enabled: false },
+  app: {
+    baseURL: '/stone-blog/'
+  },
   css: ['~/assets/css/main.css'],
   router: {
     base: '/stone-blog/'
@@ -36,7 +39,7 @@ export default ({
   nitro: {
     prerender: {
       routes: [
-        '/stone-blog/'
+        '/'
       ],
       crawlLinks: true
     }
